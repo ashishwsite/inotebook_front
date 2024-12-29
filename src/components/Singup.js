@@ -14,7 +14,7 @@ const Signup = (props) => {
        // const host="http://localhost:5000"
     //backend deploye error on vercel so it deploye on render
       const host = "https://inotebook-back-3se3.onrender.com"
-        const response = await fetch(`${host}/api/auth/login`, {
+        const response = await fetch(`${host}/api/auth/createuser`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
