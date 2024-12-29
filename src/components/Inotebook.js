@@ -11,7 +11,7 @@ const Inotebook = () => {
     <p className="lead mt-3">
         The perfect place to store your important notes and ideas, accessible anywhere and anytime.
     </p>
-    <Link to="/login" className="btn btn-primary btn-lg mt-4 px-5 rounded-pill shadow-sm hover:shadow-lg">
+    <Link to="/login" className="btn btn-danger  btn-lg mt-4 px-2 shadow-sm hover:shadow-lg">
         Get Started
     </Link>
 </div>
