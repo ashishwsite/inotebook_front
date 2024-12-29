@@ -15,7 +15,7 @@ import NoteContext from "../context/NoteContext";
     // console.log("handle login call ")
     // const host="http://localhost:5000"
     //backend deploye error on vercel so it deploye on render
-      const host = "https://inotebook-back-3se3.onrender.com/"
+      const host = "https://inotebook-back-3se3.onrender.com"
         const response = await fetch(`${host}/api/auth/login`, {
       method: "POST",
       headers: {
