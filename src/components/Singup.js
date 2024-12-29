@@ -11,9 +11,9 @@ const Signup = (props) => {
       const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("handle sumit is call ")
-        const host="http://localhost:5000"
-        // bakend not deploye that why backend locally added
-        //const host = "https://inotebook-backend-ramashishs-projects.vercel.app"
+       // const host="http://localhost:5000"
+    //backend deploye error on vercel so it deploye on render
+      const host = "https://inotebook-back-3se3.onrender.com/"
         const response = await fetch(`${host}/api/auth/login`, {
           method: "POST",
           headers: {
