@@ -30,7 +30,7 @@ const Signup = (props) => {
         });
         // fetch() se jo respone mila hai use json me convert karta hau 
         const json = await response.json();
-        console.log(json);
+        console.log("response from signup data send",json);
         if (json.success) {
           // Save the authtoken in localStroge
           // setItem is predefine function
