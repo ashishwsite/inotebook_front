@@ -30,18 +30,19 @@ const Signup = (props) => {
         });
         // fetch() se jo respone mila hai use json me convert karta hau 
         const json = await response.json();
-        console.log("response from signup data send",json);
+        // console.log("response from signup data send",json);
         if (json.success) {
           // Save the authtoken in localStroge
           // setItem is predefine function
-          localStorage.setItem("token", json.authtoken);
+          // localStorage.setItem("token", json.authtoken);
           // history ab "/" route par chala jaega automatically (yani ki login karne ke baad home par chala jaega )
-          navigate('/') 
+            alert("Your Account is successfully created")
+          navigate('/login') 
         //   props.showAlert("sucessfully ","success")
         //   history("/");both syntex is valid 
         } else {
             // props.showAlert("invalide credential","denger")
-            alert("email already exist")
+            alert("Email already exist")
         }
       };
    return(
